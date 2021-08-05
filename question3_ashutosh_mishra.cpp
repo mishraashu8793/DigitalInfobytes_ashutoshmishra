@@ -9,7 +9,8 @@ int main() {
     scanf("%s", str);
     int level = 0, result = 0, valley = 0;
     for (int i = 0; i < n; i++) {
-        if (str[i] == '[' || str[i] == ']')
+        //if (str[i] == '[' || str[i] == ']')
+        // the input used in not in square brackets
         if(str[i] == 'U') {
             level++;
             if(level == 0 && valley) {
